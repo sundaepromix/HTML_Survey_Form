@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pans uniuyo form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Pans Uniuyo Survey Form</h1>
+      <p>Thank you for taking the time to help us improve PANS week</p>
+    </main>
+    <form method="post" action="form.html">
+      <fieldset>
+        <label for="name">
+          Name <input id="name" placeholder="Name" type="text" required />
+        </label>
+        <label for="email">
+          Email <input id="email" placeholder="Email" type="email" required />
+        </label>
+        <label for="age">
+          Age(optional)
+          <input id="age" placeholder="age" type="number" min="16" max="65" />
+        </label>
+        <label for="recommend">
+          Which option best describes your current level.?
+          <select>
+            <option>year 1</option>
+            <option>year 2</option>
+            <option>year 3</option>
+            <option>year 4</option>
+            <option>year 5</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label
+          >What is your favorite feature of RUSH?
+          <select>
+            <option>Sports</option>
+            <option>Academic day</option>
+            <option>Dinner Night</option>
+            <option>Pageantry</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input type="checkbox" id="football-matches" />
+        <label for="football-matches">Football Matches</label><br />
+        <input type="checkbox" id="taste-of-food" />
+        <label for="taste-of-food">Taste Of Food</label><br />
+        <input type="checkbox" id="the-quantity-of-food" />
+        <label for="the-quantity-of-food">The Quantity Of Food</label><br />
+        <input type="checkbox" id="the-dj" />
+        <label for="the-dj">The Dj And Type Of Music</label><br />
+        <input type="checkbox" id="the-venue" />
+        <label for="the-venue">The Venue</label><br />
+        <input type="checkbox" id="better-academic-project" />
+        <label for="better-academic-project">Better Academic Projects</label
+        ><br />
+        <input type="checkbox" id="the-moderator" />
+        <label for="the-moderator">The Moderator Of Events</label>
+        <input type="checkbox" id="additional-programs" />
+        <label for="additional-programs">Additional Programs</label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          In your own opinion, how can you rate RUSH?
+          <input type="radio" class="inline" name="opinion-rate" /> Poor
+          <input type="radio" class="inline" name="opinion-rate" /> Fair
+          <input type="radio" class="inline" name="opinion-rate" /> Good
+          <input type="radio" class="inline" name="opinion-rate" /> Excellent
+        </label>
+
+        <label>
+          Any comments or suggestions?
+          <textarea
+            id="suggestion"
+            name="suggestion"
+            rows="5"
+            cols="50"
+            placeholder="Enter your comment here..."
+          >
+          </textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+
+      <footer>
+        <p>
+          Author: Promise Sunday<br />
+          <a href="sundaepromix@gmail.com">sundaepromix@gmail.com</a>
+        </p>
+      </footer>
+    </form>
+  </body>
+</html>
